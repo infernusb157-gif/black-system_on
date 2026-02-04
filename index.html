@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Black System — Bot WhatsApp</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+    body {
+      animation: fadeIn 1.2s ease;
+      background: linear-gradient(135deg, #0f0f0f, #1a0000);
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    header {
+      padding: 80px 20px;
+      text-align: center;
+      background: radial-gradient(circle at top, #330000, #000);
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #e60000;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #ff2b2b;
+      margin-bottom: 20px;
+      border-left: 4px solid #ff2b2b;
+      padding-left: 10px;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+    .commands h3 {
+      color: #ff6666;
+      margin-bottom: 10px;
+    }
+    ul { margin-left: 20px; }
+    li { margin-bottom: 8px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table th, table td {
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 10px;
+      text-align: center;
+    }
+    table th {
+      background: rgba(255,0,0,0.2);
+    }
+    footer {
+      animation: fadeInUp 1s ease;
+      text-align: center;
+      padding: 30px 20px;
+      background: #000;
+      color: #aaa;
+    }
+    .highlight { color: #ff4d4d; font-weight: bold; }
+  @keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🖤 Black System</h1>
+  <p>
+    Bem-vindo ao <span class="highlight">Black System</span>, um bot de WhatsApp 100% gratuito,
+    criado para facilitar a administração de grupos, trazer organização e automatizar tarefas importantes.
+  </p>
+  <div style="margin-top:30px;display:flex;gap:15px;flex-wrap:wrap;justify-content:center;">
+    <a href="https://wa.me/5516997046779" target="_blank" style="display:inline-block;background:#e60000;color:#fff;padding:15px 30px;border-radius:30px;text-decoration:none;font-size:1.1rem;box-shadow:0 0 20px rgba(230,0,0,0.6);transition:0.3s;">📲 Falar com o Dono</a>
+    <a href="https://wa.me/5516994542392" target="_blank" style="display:inline-block;background:#111;color:#fff;padding:15px 30px;border-radius:30px;text-decoration:none;font-size:1.1rem;border:1px solid #e60000;box-shadow:0 0 20px rgba(0,0,0,0.6);transition:0.3s;">💬 Falar com a Co-Dona</a>
+  </div>/header>
+
+<section>
+  <h2>⭐ Por que usar o Black System?</h2>
+  <div class="card">
+    <ul>
+      <li>🚀 Automatiza tarefas chatas do grupo</li>
+      <li>🔒 Sistema de permissões seguro (Dono / Admin / Membro)</li>
+      <li>📢 Facilita avisos importantes com um só comando</li>
+      <li>👋 Mensagens automáticas de entrada e saída</li>
+      <li>🖤 Totalmente gratuito e em constante evolução</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>👋 Apresentação</h2>
+  <div class="card">
+    <p>
+      Olá! Seja muito bem-vindo(a). Eu sou o <span class="highlight">criador e programador oficial</span> do Black System.
+      Desenvolvi esse bot com muito esforço e dedicação para ajudar grupos do WhatsApp a terem mais controle,
+      segurança e praticidade.
+    </p>
+    <br />
+    <p>
+      Minha esposa é <span class="highlight">co-dona</span> do projeto e me apoia diretamente em tudo,
+      desde as ideias até a divulgação. O Black System é feito com carinho para a comunidade.
+    </p>
+    <br />
+    <p>
+      💡 O bot é totalmente <span class="highlight">gratuito</span>. A única coisa que pedimos em troca
+      é a sua ajuda para divulgar o projeto e fazer ele crescer.
+    </p>
+  </div>
+</section>
+
+<section class="commands">
+  <h2>📜 Comandos do Black System</h2>
+
+  <div class="card">
+    <h3>👑 Administração</h3>
+    <ul>
+      <li><b>/addadm @membro</b> — Adiciona o usuário marcado como administrador do bot<br />✔️ Pode usar comandos admin<br />❌ Apenas admins ou dono</li>
+      <li><b>/rradm @membro</b> — Remove o usuário da lista de administradores<br />⚠️ Somente o <b>DONO</b> do bot</li>
+      <li><b>/all</b> — Marca todos os membros do grupo<br />📢 Ideal para avisos importantes<br />🖼️ Envia imagem se existir <code>./fotos/all.jpg</code><br />👑 Apenas administradores</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>👋 Boas-vindas</h3>
+    <ul>
+      <li><b>/addboasvindas</b> — Ativa mensagem automática ao entrar no grupo</li>
+      <li><b>/rrboasvindas</b> — Desativa a mensagem de boas-vindas</li>
+      <li><b>/setboasvindas texto</b> — Define a mensagem de boas-vindas<br />📝 Variável disponível: <code>{nome}</code><br />Exemplo:<br /><code>/setboasvindas Seja bem-vindo(a), {nome} 🖤</code></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🚪 Mensagem de Saída</h3>
+    <ul>
+      <li><b>/addsair</b> — Ativa mensagem automática quando alguém sai</li>
+      <li><b>/rrsair</b> — Desativa a mensagem de saída</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>📜 Informação</h3>
+    <ul>
+      <li><b>/comandos</b> — Mostra a lista de comandos disponíveis no grupo</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>🔐 Sistema Interno</h2>
+  <div class="card">
+    <ul>
+      <li>✔️ Logs no CMD (terminal)</li>
+      <li>✔️ Log privado enviado ao DONO</li>
+      <li>✔️ Normalização automática (@lid → @c.us)</li>
+      <li>✔️ Sistema de permissões: Dono / Admin / Membro</li>
+    </ul>
+  </div>
+
+  <h2>🧠 Permissões Resumidas</h2>
+  <div class="card">
+    <table>
+      <tr>
+        <th>Comando</th>
+        <th>Membro</th>
+        <th>Admin</th>
+        <th>Dono</th>
+      </tr>
+      <tr>
+        <td>/comandos</td>
+        <td>✅</td>
+        <td>✅</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>/addadm</td>
+        <td>❌</td>
+        <td>✅</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>/rradm</td>
+        <td>❌</td>
+        <td>❌</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>/all</td>
+        <td>❌</td>
+        <td>✅</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>Boas-vindas</td>
+        <td>❌</td>
+        <td>✅</td>
+        <td>✅</td>
+      </tr>
+      <tr>
+        <td>Saída</td>
+        <td>❌</td>
+        <td>✅</td>
+        <td>✅</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <p>🖤 Black System © 2026 — Bot WhatsApp Gratuito</p>
+  <p>Ajude a divulgar e fortalecer o projeto</p>
+</footer>
+
+</body>
+</html>
